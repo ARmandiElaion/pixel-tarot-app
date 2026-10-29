@@ -1,6 +1,33 @@
-@font-face{font-family:Pixelify;src:url('PixelifySans.ttf') format('truetype');font-display:swap}
-:root{color-scheme:dark;--ink:#0a0a11;--panel:#15151f;--gold:#e8c77d;--text:#f3efe8;--muted:#b9b6c6;--violet:#c092ff}
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:24px}body{margin:0;color:var(--text);font:18px/1.65 'Iowan Old Style','Palatino Linotype',Palatino,serif;background:radial-gradient(ellipse at top left,#282036 0,transparent 55%),radial-gradient(ellipse at bottom right,#282013 0,transparent 60%),var(--ink)}
-main{max-width:900px;margin:auto;padding:64px 28px 32px}header{padding-bottom:28px;border-bottom:1px solid #e8c77d40}header img{float:right;border-radius:22px;margin:8px 0 24px 24px}h1{font:clamp(38px,8vw,70px)/1.03 Pixelify,monospace;margin:12px 0 20px;letter-spacing:-1px}h2{font-size:clamp(25px,4vw,34px);line-height:1.2;font-weight:500;color:var(--gold)}h3{font-size:23px;color:var(--gold)}p{margin:0 0 18px}.eyebrow{font:13px/1.5 Pixelify,monospace;letter-spacing:3px;color:var(--gold)}.lead{font-size:24px;color:var(--muted)}a{color:var(--gold);text-decoration-thickness:1px;text-underline-offset:5px;overflow-wrap:anywhere}a:hover{color:var(--violet)}a:focus-visible,summary:focus-visible{outline:2px solid var(--violet);outline-offset:6px;border-radius:3px}nav{display:flex;flex-wrap:wrap;gap:8px 28px;padding:24px 0 40px}nav a{display:inline-flex;align-items:center;min-height:44px;font:16px Pixelify,monospace}section{margin-bottom:48px}.panel{padding:28px;border:1px solid #e8c77d33;border-radius:20px;background:linear-gradient(135deg,#2d25322e,#15151fe8)}.panel h2{margin-top:0}details{border-bottom:1px solid #ffffff20;padding:18px 0}summary{cursor:pointer;color:var(--gold);padding:8px 0;line-height:1.4}details p{padding-top:12px;color:var(--muted)}footer{border-top:1px solid #ffffff20;padding-top:28px;font-size:14px;color:var(--muted)}[lang=es]{scroll-margin-top:24px}strong{color:var(--gold)}
+@font-face{font-family:Pixelify;src:url('PixelifySans.ttf') format('truetype');font-weight:400 700;font-display:swap}
+@font-face{font-family:Instrument;src:url('InstrumentSans.ttf') format('truetype');font-weight:400 700;font-display:swap}
+@font-face{font-family:JetBrains;src:url('JetBrainsMono.ttf') format('truetype');font-weight:100 800;font-display:swap}
+:root{color-scheme:dark;--ink:#07050e;--panel:#140c2e;--text:#f1ede6;--muted:#a19ca4;--violet:#b43cff;--line:#f1ede624}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:24px}
+body{margin:0;color:var(--text);font:18px/1.65 Instrument,sans-serif;background:radial-gradient(ellipse at top left,#b43cff12,transparent 55%),radial-gradient(ellipse at bottom right,var(--panel),transparent 60%),var(--ink)}
+main{max-width:900px;margin:auto;padding:64px 28px 32px}
+header{padding-bottom:28px;border-bottom:1px solid var(--line)}
+header img{float:right;border-radius:22px;margin:8px 0 24px 24px}
+h1{font:clamp(38px,8vw,70px)/1.03 Pixelify,monospace;margin:12px 0 20px;letter-spacing:-1px}
+h2{font-size:clamp(25px,4vw,34px);line-height:1.2;font-weight:600;color:var(--text);letter-spacing:-.02em}
+h3{font-size:23px;color:var(--text)}
+p{margin:0 0 18px}
+.eyebrow{font:12px/1.5 JetBrains,monospace;letter-spacing:2px;color:var(--muted)}
+.lead{font-size:24px;color:var(--muted)}
+a{color:var(--text);text-decoration-thickness:1px;text-underline-offset:5px;overflow-wrap:anywhere}
+a:hover{text-decoration-color:var(--violet);text-decoration-thickness:2px}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--violet);outline-offset:6px;border-radius:3px}
+nav{display:flex;flex-wrap:wrap;gap:8px 28px;padding:24px 0 40px}
+nav a{display:inline-flex;align-items:center;min-height:44px;font:600 16px Instrument,sans-serif}
+section{margin-bottom:48px}
+.panel{padding:28px;border:1px solid var(--line);border-radius:20px;background:var(--panel)}
+.panel h2{margin-top:0}
+details{border-bottom:1px solid var(--line);padding:18px 0}
+summary{cursor:pointer;color:var(--text);padding:8px 0;line-height:1.4;min-height:44px}
+summary::marker{color:var(--violet)}
+details p{padding-top:12px;color:var(--muted)}
+footer{border-top:1px solid var(--line);padding-top:28px;font-size:14px;color:var(--muted)}
+[lang=es]{scroll-margin-top:24px}
+strong{color:var(--text)}
 @media(max-width:520px){main{padding:36px 20px}header img{width:64px;height:64px;border-radius:16px}body{font-size:17px}.panel{padding:22px}.lead{font-size:20px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
